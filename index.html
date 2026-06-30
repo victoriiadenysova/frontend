@@ -1,0 +1,1000 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Flora — Flower Boutique</title>
+        <meta
+            name="description"
+            content="Flora — handcrafted flower bouquets for every occasion. Browse our bestsellers and order online."
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.css"
+        />
+    </head>
+    <body>
+        <!-- ==================== HEADER ==================== -->
+        <header class="header" id="header">
+            <div class="container header-container">
+                <a href="#hero" class="logo" aria-label="Flora — home">
+                    <img
+                        src="images/logo.svg"
+                        alt="Flora"
+                        width="112"
+                        height="48"
+                        class="logo-img"
+                    />
+                </a>
+
+                <nav class="nav" id="desktop-nav" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#bestsellers" class="nav-link"
+                                >Bestsellers</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a href="#bouquets" class="nav-link">Bouquets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#feedback" class="nav-link">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contacts" class="nav-link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="#bouquets" class="btn btn-primary nav-cta">
+                    Explore Bouquets
+                </a>
+
+                <button
+                    type="button"
+                    class="burger-btn"
+                    id="burger-btn"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <svg
+                        width="24"
+                        height="18"
+                        viewBox="0 0 24 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                    >
+                        <rect width="24" height="2" rx="1" fill="#1A1A1A" />
+                        <rect
+                            y="8"
+                            width="24"
+                            height="2"
+                            rx="1"
+                            fill="#1A1A1A"
+                        />
+                        <rect
+                            y="16"
+                            width="24"
+                            height="2"
+                            rx="1"
+                            fill="#1A1A1A"
+                        />
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <!-- ==================== HERO ==================== -->
+            <section class="hero" id="hero">
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Brighten Your Day with Our Stunning Bouquets
+                        </h1>
+                        <p class="hero-text">
+                            At Flora, we believe that every occasion deserves a
+                            beautiful bouquet. Our expertly crafted arrangements
+                            are designed to bring joy and elegance to your
+                            celebrations.
+                        </p>
+                        <a href="#bestsellers" class="btn btn-primary">
+                            Explore Our Bestsellers
+                        </a>
+                    </div>
+                    <div class="hero-image-wrap">
+                        <img
+                            src="images/hero-bouquet.jpg"
+                            alt="A bouquet of pink and white peonies, roses and greenery held in hand"
+                            width="2730"
+                            height="990"
+                            class="hero-image"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== ABOUT ==================== -->
+            <section class="about" id="about">
+                <div class="container about-container">
+                    <div class="about-content">
+                        <img
+                            src="images/flower-icon.svg"
+                            alt=""
+                            width="44"
+                            height="76"
+                            class="about-icon"
+                            aria-hidden="true"
+                        />
+                        <h2 class="section-title about-title">
+                            Our Passion for Floral Artistry
+                        </h2>
+                        <p class="about-text">
+                            At Flora, we believe that every bouquet tells a
+                            story. Our team meticulously crafts each
+                            arrangement, blending creativity with the freshest
+                            blooms to create stunning pieces for every occasion.
+                        </p>
+                    </div>
+                    <div class="about-image-wrap">
+                        <img
+                            src="images/about-florist.jpg"
+                            alt="Florist in a green apron arranging fresh white peonies"
+                            width="1024"
+                            height="683"
+                            class="about-image"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== BESTSELLERS (SLIDER) ==================== -->
+            <section class="bestsellers" id="bestsellers">
+                <div class="container">
+                    <h2 class="section-title bestsellers-title">
+                        Top-Selling Bouquets
+                    </h2>
+
+                    <div class="slider-wrapper">
+                        <ul class="slider-list" id="slider-list">
+                            <li
+                                class="product-card slider-card"
+                                data-id="1"
+                                data-name="Spring Elegance"
+                                data-price="$35"
+                                data-description="Each stem is carefully selected to create a bouquet that radiates freshness, elegance, and the gentle charm of spring. Whether you're celebrating a birthday, sending love, or simply brightening someone's day, this arrangement is sure to bring warm smiles and lasting impressions."
+                                data-image="images/spring-elegance.jpg"
+                            >
+                                <div class="card-image-wrap">
+                                    <img
+                                        src="images/spring-elegance.jpg"
+                                        alt="Spring Elegance bouquet of pink peonies, tulips and roses on a navy background"
+                                        width="400"
+                                        height="400"
+                                        class="card-image"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <h3 class="card-name">Spring Elegance</h3>
+                                <p class="card-desc">
+                                    A delicate blend of peonies, tulips, and
+                                    roses — perfect for springtime gifting and
+                                    bright smiles.
+                                </p>
+                                <span class="card-price">$35</span>
+                            </li>
+
+                            <li
+                                class="product-card slider-card"
+                                data-id="2"
+                                data-name="Berry Chic"
+                                data-price="$40"
+                                data-description="A stylish composition of roses, seasonal greenery, and vibrant berries — a bold and elegant floral statement that captures attention and inspires admiration."
+                                data-image="images/berry-chic.jpg"
+                            >
+                                <div class="card-image-wrap">
+                                    <img
+                                        src="images/berry-chic.jpg"
+                                        alt="Berry Chic bouquet of roses, eucalyptus and dark berries with pink ribbons"
+                                        width="400"
+                                        height="400"
+                                        class="card-image"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <h3 class="card-name">Berry Chic</h3>
+                                <p class="card-desc">
+                                    A stylish composition of roses, seasonal
+                                    greenery, and vibrant berries — a bold and
+                                    elegant floral statement.
+                                </p>
+                                <span class="card-price">$40</span>
+                            </li>
+
+                            <li
+                                class="product-card slider-card"
+                                data-id="3"
+                                data-name="Lavender Dream"
+                                data-price="$55"
+                                data-description="A rich bouquet with lavender, lisianthus, and roses — ideal for those who love deep hues and gentle fragrance. This dreamy arrangement creates a sense of calm and romance."
+                                data-image="https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=1060&q=80"
+                            >
+                                <div class="card-image-wrap">
+                                    <img
+                                        src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=530&q=80"
+                                        srcset="
+                                            https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=530&q=80  1x,
+                                            https://images.unsplash.com/photo-1468327768560-75b778cbb551?w=1060&q=80 2x
+                                        "
+                                        alt="Lavender Dream bouquet"
+                                        width="400"
+                                        height="400"
+                                        class="card-image"
+                                        loading="lazy"
+                                    />
+                                </div>
+                                <h3 class="card-name">Lavender Dream</h3>
+                                <p class="card-desc">
+                                    A rich bouquet with lavender, lisianthus,
+                                    and roses — ideal for those who love deep
+                                    hues and gentle fragrance.
+                                </p>
+                                <span class="card-price">$55</span>
+                            </li>
+                        </ul>
+
+                        <!-- Slider controls -->
+                        <div class="slider-controls">
+                            <ul class="slider-dots" id="slider-dots">
+                                <li>
+                                    <button
+                                        type="button"
+                                        class="slider-dot active"
+                                        data-index="0"
+                                        aria-label="Slide 1"
+                                    ></button>
+                                </li>
+                                <li>
+                                    <button
+                                        type="button"
+                                        class="slider-dot"
+                                        data-index="1"
+                                        aria-label="Slide 2"
+                                    ></button>
+                                </li>
+                                <li>
+                                    <button
+                                        type="button"
+                                        class="slider-dot"
+                                        data-index="2"
+                                        aria-label="Slide 3"
+                                    ></button>
+                                </li>
+                            </ul>
+
+                            <div class="slider-arrows">
+                                <button
+                                    type="button"
+                                    class="slider-arrow prev-btn"
+                                    id="slider-prev"
+                                    aria-label="Previous slide"
+                                >
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            d="M12 4L6 10L12 16"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                                <button
+                                    type="button"
+                                    class="slider-arrow next-btn"
+                                    id="slider-next"
+                                    aria-label="Next slide"
+                                >
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            d="M8 4L14 10L8 16"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== BOUQUETS GRID ==================== -->
+            <section class="bouquets" id="bouquets">
+                <div class="container">
+                    <h2 class="section-title bouquets-title">Bouquets</h2>
+                    <p class="section-subtitle">
+                        Explore our stunning selection of fresh flower bouquets.
+                    </p>
+
+                    <form
+                        class="bouquets-toolbar"
+                        id="bouquets-filter-form"
+                        aria-label="Search bouquets"
+                    >
+                        <label
+                            class="form-label visually-hidden"
+                            for="bouquets-search"
+                            >Search bouquets</label
+                        >
+                        <input
+                            type="search"
+                            id="bouquets-search"
+                            name="search"
+                            class="form-input bouquets-search-input"
+                            placeholder="Search by name or description…"
+                            autocomplete="off"
+                        />
+                        <button
+                            type="submit"
+                            class="btn btn-primary bouquets-search-submit"
+                        >
+                            Search
+                        </button>
+                    </form>
+
+                    <p
+                        class="bouquets-error"
+                        id="bouquets-error"
+                        role="alert"
+                        hidden
+                    ></p>
+
+                    <div
+                        class="bouquets-loader-wrap"
+                        id="bouquets-loader-wrap"
+                        aria-busy="false"
+                    >
+                        <div class="bouquets-loader" aria-hidden="true"></div>
+                        <span class="bouquets-loader-text">Завантаження…</span>
+                    </div>
+
+                    <ul class="products-list" id="products-list"></ul>
+
+                    <div class="show-more-wrap">
+                        <button
+                            type="button"
+                            class="btn btn-primary show-more-btn"
+                            id="show-more-btn"
+                            hidden
+                        >
+                            Load more
+                        </button>
+                        <p
+                            class="bouquets-end-message"
+                            id="bouquets-end-message"
+                            hidden
+                        >
+                            We're sorry, but you've reached the end of search
+                            results
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== FEEDBACK / TESTIMONIALS ==================== -->
+            <section class="feedback" id="feedback">
+                <div class="container">
+                    <h2 class="section-title feedback-title">
+                        What our clients says
+                    </h2>
+
+                    <div class="reviews-wrapper">
+                        <ul class="reviews-list" id="reviews-list">
+                            <li class="review-card">
+                                <p class="review-text">
+                                    “Flora made my anniversary unforgettable
+                                    with their beautiful arrangement!”
+                                </p>
+                                <span class="review-author">Emma T.</span>
+                            </li>
+                            <li class="review-card">
+                                <p class="review-text">
+                                    Absolutely stunning bouquet! It looked even
+                                    better than the photo and arrived right on
+                                    time.
+                                </p>
+                                <span class="review-author">Daniel R.</span>
+                            </li>
+                            <li class="review-card">
+                                <p class="review-text">
+                                    The service was exceptional, and the flowers
+                                    were fresh!
+                                </p>
+                                <span class="review-author">Olivia M.</span>
+                            </li>
+                        </ul>
+
+                        <div class="reviews-arrows">
+                            <button
+                                type="button"
+                                class="slider-arrow prev-btn"
+                                id="reviews-prev"
+                                aria-label="Previous review"
+                            >
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M12 4L6 10L12 16"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                            <button
+                                type="button"
+                                class="slider-arrow next-btn"
+                                id="reviews-next"
+                                aria-label="Next review"
+                            >
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 20 20"
+                                    fill="none"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M8 4L14 10L8 16"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================== CONTACTS ==================== -->
+            <section class="contacts" id="contacts">
+                <div class="container contacts-container">
+                    <div class="contacts-content">
+                        <span class="contacts-label">Connect</span>
+                        <h2 class="section-title contacts-title">
+                            Get in Touch
+                        </h2>
+                        <p class="contacts-text">
+                            We're here to assist you with all your floral needs
+                            and inquiries.
+                        </p>
+                    </div>
+                    <address class="contacts-address">
+                        <div class="contacts-row">
+                            <svg
+                                class="contacts-icon"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M6.016 3.005C5.714 2.364 5.02 2 4.307 2.104L2.663 2.35A2 2 0 001 4.326C1.468 12.45 7.55 18.532 15.674 19c1.03.063 1.94-.658 2.102-1.676l.247-1.644a2 2 0 00-1.253-2.165l-1.7-.637a2 2 0 00-2.17.526l-.553.618a10.306 10.306 0 01-4.37-4.37l.618-.553a2 2 0 00.526-2.17l-.637-1.7-.468-1.224z"
+                                    stroke="#1A1A1A"
+                                    stroke-width="1.5"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                            <div class="contacts-info">
+                                <span class="contacts-label-sm">Phone</span>
+                                <a
+                                    href="tel:+15551234567"
+                                    class="contacts-link"
+                                    >+1 (555) 123-4567</a
+                                >
+                            </div>
+                        </div>
+                        <div class="contacts-row">
+                            <svg
+                                class="contacts-icon"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M10 11a3 3 0 100-6 3 3 0 000 6z"
+                                    stroke="#1A1A1A"
+                                    stroke-width="1.5"
+                                />
+                                <path
+                                    d="M10 2a7 7 0 00-7 7c0 5.25 7 11 7 11s7-5.75 7-11a7 7 0 00-7-7z"
+                                    stroke="#1A1A1A"
+                                    stroke-width="1.5"
+                                />
+                            </svg>
+                            <div class="contacts-info">
+                                <span class="contacts-label-sm">Store</span>
+                                <span class="contacts-link"
+                                    >456 Floral Ave, Sydney NSW 2000 AU</span
+                                >
+                            </div>
+                        </div>
+                    </address>
+                </div>
+                <div class="contacts-image-wrap">
+                    <img
+                        src="images/contacts-shop.png"
+                        alt="Florist holding a fresh yellow bouquet in a flower workshop"
+                        width="1440"
+                        height="500"
+                        class="contacts-image"
+                        loading="lazy"
+                    />
+                </div>
+            </section>
+        </main>
+
+        <!-- ==================== FOOTER ==================== -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <a href="#hero" class="logo footer-logo" aria-label="Flora — home">
+                    <img
+                        src="images/logo.svg"
+                        alt="Flora"
+                        width="112"
+                        height="48"
+                        class="logo-img"
+                    />
+                </a>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <ul class="footer-nav-list">
+                        <li>
+                            <a href="#about" class="footer-nav-link"
+                                >About Us</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#bestsellers" class="footer-nav-link"
+                                >Bestsellers</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#bouquets" class="footer-nav-link"
+                                >Bouquets</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#feedback" class="footer-nav-link"
+                                >Feedback</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#contacts" class="footer-nav-link"
+                                >Contacts</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="social-list">
+                    <li>
+                        <a
+                            href="#"
+                            class="social-link"
+                            aria-label="Facebook"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M22 12.06C22 6.48 17.52 2 11.94 2 6.36 2 1.88 6.48 1.88 12.06c0 5.04 3.69 9.22 8.5 9.96V14.9H7.78v-2.84h2.6V9.85c0-2.57 1.53-3.99 3.86-3.99 1.12 0 2.29.2 2.29.2v2.52h-1.29c-1.27 0-1.66.79-1.66 1.6v1.92h2.83l-.45 2.84h-2.38v7.12c4.81-.74 8.5-4.92 8.5-9.96z"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="social-link"
+                            aria-label="Instagram"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                aria-hidden="true"
+                            >
+                                <rect
+                                    x="2"
+                                    y="2"
+                                    width="20"
+                                    height="20"
+                                    rx="5"
+                                    ry="5"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="4"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                                <circle
+                                    cx="17.5"
+                                    cy="6.5"
+                                    r="1"
+                                    fill="currentColor"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="#"
+                            class="social-link"
+                            aria-label="X (Twitter)"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container footer-subscribe-container">
+                <form
+                    class="footer-subscribe"
+                    id="footer-subscribe-form"
+                    novalidate
+                >
+                    <p class="footer-subscribe-title">Підпишіться на новини</p>
+                    <div class="footer-subscribe-row">
+                        <div class="form-group footer-subscribe-email">
+                            <label
+                                class="form-label visually-hidden"
+                                for="subscribe-email"
+                                >Email</label
+                            >
+                            <input
+                                type="email"
+                                id="subscribe-email"
+                                name="email"
+                                class="form-input"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            />
+                        </div>
+                        <button
+                            type="submit"
+                            class="btn btn-primary footer-subscribe-btn"
+                        >
+                            Підписатися
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container">
+                <p class="footer-copy">© 2025 Flora. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!-- ==================== PRODUCT DETAILS MODAL ==================== -->
+        <div
+            id="product-modal"
+            class="backdrop"
+            role="dialog"
+            aria-modal="true"
+            aria-hidden="true"
+            aria-labelledby="modal-product-name"
+        >
+            <div class="modal product-modal">
+                <button
+                    type="button"
+                    class="modal-close-btn"
+                    data-modal-close
+                    aria-label="Close product details"
+                >
+                    <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M1 1L17 17M17 1L1 17"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+                </button>
+                <div class="product-modal-image-wrap">
+                    <img
+                        src=""
+                        alt=""
+                        id="modal-product-image"
+                        width="530"
+                        height="530"
+                        class="product-modal-image"
+                    />
+                </div>
+                <div class="product-modal-info">
+                    <h2 class="product-modal-name" id="modal-product-name"></h2>
+                    <p class="product-modal-price" id="modal-product-price"></p>
+                    <p class="product-modal-desc" id="modal-product-desc"></p>
+                    <div class="product-modal-actions">
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="buy-now-btn"
+                        >
+                            Buy now
+                        </button>
+                        <input
+                            type="number"
+                            value="1"
+                            min="1"
+                            max="99"
+                            name="quantity"
+                            id="quantity-input"
+                            class="quantity-input"
+                            aria-label="Quantity"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== ORDER MODAL ==================== -->
+        <div
+            id="order-modal"
+            class="backdrop"
+            role="dialog"
+            aria-modal="true"
+            aria-hidden="true"
+            aria-labelledby="order-modal-title"
+        >
+            <div class="modal order-modal">
+                <button
+                    type="button"
+                    class="modal-close-btn"
+                    data-modal-close
+                    aria-label="Close order form"
+                >
+                    <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M1 1L17 17M17 1L1 17"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+                </button>
+                <h2 class="order-modal-title" id="order-modal-title">Order</h2>
+                <form id="order-form" class="order-form" novalidate>
+                    <div class="form-group">
+                        <label for="order-name" class="form-label">Name*</label>
+                        <input
+                            type="text"
+                            id="order-name"
+                            name="name"
+                            placeholder="Ann"
+                            required
+                            autocomplete="given-name"
+                            class="form-input"
+                        />
+                        <span class="form-error" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-phone" class="form-label"
+                            >Phone*</label
+                        >
+                        <input
+                            type="tel"
+                            id="order-phone"
+                            name="phone"
+                            placeholder="+1 (555) 123-4567"
+                            required
+                            autocomplete="tel"
+                            class="form-input"
+                        />
+                        <span class="form-error" id="phone-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="order-address" class="form-label"
+                            >Address</label
+                        >
+                        <input
+                            type="text"
+                            id="order-address"
+                            name="address"
+                            placeholder="456 Floral Ave, Sydney NSW 2000 AU"
+                            autocomplete="street-address"
+                            class="form-input"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="order-message" class="form-label"
+                            >Message</label
+                        >
+                        <textarea
+                            id="order-message"
+                            name="message"
+                            placeholder="Type your message..."
+                            rows="5"
+                            class="form-textarea"
+                        ></textarea>
+                    </div>
+                    <button
+                        type="submit"
+                        class="btn btn-primary order-submit-btn"
+                    >
+                        Go to Checkout
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- ==================== MOBILE MENU ==================== -->
+        <div
+            id="mobile-menu"
+            class="mobile-menu"
+            aria-hidden="true"
+            role="dialog"
+            aria-label="Mobile navigation"
+        >
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-header">
+                    <a href="#hero" class="logo" aria-label="Flora — home">
+                        <img
+                            src="images/logo.svg"
+                            alt="Flora"
+                            width="112"
+                            height="48"
+                            class="logo-img"
+                        />
+                    </a>
+                    <button
+                        type="button"
+                        class="menu-close-btn"
+                        id="menu-close-btn"
+                        aria-label="Close menu"
+                    >
+                        <svg
+                            width="18"
+                            height="18"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M1 1L17 17M17 1L1 17"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+                    </button>
+                </div>
+
+                <nav aria-label="Mobile navigation">
+                    <ul class="mobile-nav-list">
+                        <li>
+                            <a href="#about" class="mobile-nav-link"
+                                >About Us</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#bestsellers" class="mobile-nav-link"
+                                >Bestsellers</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#bouquets" class="mobile-nav-link"
+                                >Bouquets</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#feedback" class="mobile-nav-link"
+                                >Feedback</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#contacts" class="mobile-nav-link"
+                                >Contacts</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="#bouquets" class="btn btn-primary mobile-menu-cta">
+                    Explore Bouquets
+                </a>
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/simplelightbox@2.14.2/dist/simple-lightbox.min.js"
+        ></script>
+        <script src="js/main.js" defer></script>
+    </body>
+</html>
